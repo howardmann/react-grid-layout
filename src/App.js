@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Responsive, WidthProvider} from 'react-grid-layout';
 import styled from 'styled-components'
-
+import Chart from './Chart.js'
 // Used to automatically determine width upon initialisation of window
 const ResponsiveGridLayout = WidthProvider(Responsive)
 
@@ -88,6 +88,7 @@ let GridItem = (props) => {
         <li>w: {layout.w}</li>
         <li>h: {layout.h}</li>
       </ul>
+      <Chart/>
     </Widget>
   )
 }
